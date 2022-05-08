@@ -91,6 +91,9 @@ export default function SingleMovie() {
     cast = [],
     genres = [],
   } = movie;
+  if (movie.id === undefined) {
+    return;
+  }
 
   return (
     <div className="dark:bg-primary bg-white min-h-screen pb-10">
