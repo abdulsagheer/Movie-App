@@ -4,7 +4,8 @@
   "description": "Movie App Backend",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Abdul Sagheer",
   "license": "ISC",
